@@ -5,9 +5,14 @@ This is the official Pytorch implementation of our paper [**Spatio-Temporal Aggr
 ## Notes on downloading this code
 Since this project contains a large pre-trained model, you need to download it through:
 ```
-git clone 
+git clone https://github.com/TJU-guozhaoxuan/STAT.git
 ```
-'git clone'. If the download fails, please try the following command: 'git config'.
+
+If the download fails, please try:
+```
+git config --global http.postBuffer 2147483648
+git clone https://github.com/TJU-guozhaoxuan/STAT.git
+```
 
 ## Conda Installation
 The code heavily depends on PyTorch, which is optimized only for GPUs supporting CUDA. For our implementation the CUDA version 11.7 is used. The Python packages required for the experiment are detailed in: 
