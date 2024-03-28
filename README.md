@@ -2,6 +2,13 @@
 
 This is the official Pytorch implementation of our paper [**Spatio-Temporal Aggregation Transformer for Object Detection With Neuromorphic Vision Sensors**]
 
+## Notes on downloading this code
+Since this project contains a large pre-trained model, you need to download it through:
+```
+git clone 
+```
+'git clone'. If the download fails, please try the following command: 'git config'.
+
 ## Conda Installation
 The code heavily depends on PyTorch, which is optimized only for GPUs supporting CUDA. For our implementation the CUDA version 11.7 is used. The Python packages required for the experiment are detailed in: 
 ```
