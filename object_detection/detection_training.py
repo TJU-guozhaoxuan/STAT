@@ -188,9 +188,6 @@ def train(batch_size, temporal_aggregation_size, epochs, data_augmentation,
 
         writer.add_scalar("training/loss", training_loss, i+1)
 
-        # representation_vizualization = create_image(representation)
-        # writer.add_image("training/representation", representation_vizualization, iteration)
-
         model = model.eval()
 
         print(f"Validation step [{i + 1:3d}/{epochs:3d}]")
@@ -227,8 +224,6 @@ def train(batch_size, temporal_aggregation_size, epochs, data_augmentation,
         writer.add_scalar("val/map", map, i+1)
         writer.add_scalar("val/best_map", best_map, i+1)
         print(f"best map is : {best_map:.4f}%")
-        # representation_vizualization = create_image(representation)
-        # writer.add_image("val/representation", representation_vizualization, iteration
 
 
 if __name__ == '__main__':
