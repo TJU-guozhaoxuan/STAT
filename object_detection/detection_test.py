@@ -61,6 +61,6 @@ if __name__ == '__main__':
     dataset_path = "../data/" + \
                    "ncaltech101" if dataset_type == "n-caltech101" else "detection_dataset_duration_60s_ratio_1.0"
     ckpt_name = "best.pth"
-    device = "cpu"
+    device = "cuda:0"
     test(batch_size, temporal_aggregation_size, dataset_type,
          dataset_path, ckpt_name, device)
