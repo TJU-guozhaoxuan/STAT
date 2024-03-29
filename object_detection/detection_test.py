@@ -58,10 +58,8 @@ if __name__ == '__main__':
     batch_size = 5
     temporal_aggregation_size = 3
     dataset_type = "n-caltech101"                           # "gen1" or "n-caltech101"
-    # dataset_path = "../data/" + \
-    #                "ncaltech101" if dataset_type == "n-caltech101" else "detection_dataset_duration_60s_ratio_1.0"
-    # dataset_path = "/home/liudaqing/detection_dataset_duration_60s_ratio_1.0"
-    dataset_path = "/disk2/users/M21_guozhaoxuan/Documents/mynet/data/ncaltech101"
+    dataset_path = "../data/" + \
+                   "ncaltech101" if dataset_type == "n-caltech101" else "detection_dataset_duration_60s_ratio_1.0"
     ckpt_name = "best.pth"
     device = "cpu"
     test(batch_size, temporal_aggregation_size, dataset_type,
